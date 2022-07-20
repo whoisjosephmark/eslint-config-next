@@ -1,0 +1,32 @@
+{
+  "name": "@josephmark/eslint-config-next",
+  "version": "1.0.0",
+  "description": "The Josephmark team's Next.js/Typescript linter config",
+  "main": ".eslintrc.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisjosephmark/eslint-config-next.git"
+  },
+  "keywords": [
+    "eslint",
+    "typescript",
+    "react",
+    "nextjs"
+  ],
+  "author": "@floatingdino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whoisjosephmark/eslint-config-next/issues"
+  },
+  "homepage": "https://github.com/whoisjosephmark/eslint-config-next#readme",
+  "dependencies": {
+    "@josephmark/eslint-config-react": "^1.0.0",
+    "eslint-config-next": "^12.2.2"
+  },
+  "peerDependencies": {
+    "next": "^12.2"
+  }
+}
