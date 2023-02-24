@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/whoisjosephmark/eslint-config-next#readme",
   "dependencies": {
-    "@josephmark/eslint-config-react": "^1.0.6",
+    "@josephmark/eslint-config-react": "^1.0.8",
     "eslint-config-next": "^13.1.6"
   },
   "peerDependencies": {
