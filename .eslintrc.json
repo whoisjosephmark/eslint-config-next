@@ -1,5 +1,5 @@
 {
-  "extends": ["@josephmark/react", "next", "next/core-web-vitals"],
+  "extends": ["next", "next/core-web-vitals", "@josephmark/react"],
   "rules": {
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
     "jsx-a11y/anchor-is-valid": [
