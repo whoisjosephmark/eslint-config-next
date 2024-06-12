@@ -1,6 +1,6 @@
 # @josephmark/eslint-config-next
 
-The Josephmark team's basic typescript linter config
+The Josephmark team's basic typescript linter config for Next.js
 
 ## Installation
 
@@ -8,10 +8,13 @@ The Josephmark team's basic typescript linter config
 
 ## Usage
 
-Add this to your eslint config `.eslintrc.json`
+Add this to your eslint config `eslint.config.js` or `eslint.config.mjs`
 
-```json
-{
-  "extends": ["@josephmark/next"]
-}
+```js
+import jmNext from "@josephmark/eslint-config-next"
+
+export default [
+  ...jmNext,
+  // Add any additional rules here
+]
 ```
