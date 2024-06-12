@@ -2,7 +2,7 @@
   "name": "@josephmark/eslint-config-next",
   "version": "1.3.0",
   "description": "The Josephmark team's Next.js/Typescript linter config",
-  "main": ".eslintrc.json",
+  "main": "eslint.config.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
