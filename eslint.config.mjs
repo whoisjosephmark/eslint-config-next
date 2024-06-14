@@ -1,11 +1,19 @@
-import next from "eslint-config-next"
-import nextCoreWebVitals from "eslint-config-next/core-web-vitals"
+import nextPlugin from "@next/eslint-plugin-next"
+import { fixupPluginRules } from "@eslint/compat"
 import jmReact from "@josephmark/eslint-config-react"
 
 export default [
-  ...next,
-  ...nextCoreWebVitals,
   ...jmReact,
+  {
+    name: "@josephmark/eslint-config-next:next",
+    plugins: {
+      "@next/next": fixupPluginRules(nextPlugin),
+    },
+    rules: {
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs["core-web-vitals"].rules,
+    },
+  },
   {
     rules: {
       // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
