@@ -2,6 +2,7 @@ import nextPlugin from "@next/eslint-plugin-next"
 import { fixupPluginRules } from "@eslint/compat"
 import jmReact from "@josephmark/eslint-config-react"
 
+/** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   ...jmReact,
   {
@@ -15,6 +16,7 @@ export default [
     },
   },
   {
+    name: "@josephmark/eslint-config-next:rules",
     rules: {
       // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/issues/402
       "jsx-a11y/anchor-is-valid": [
